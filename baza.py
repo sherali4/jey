@@ -105,6 +105,7 @@ def add_user_numb(message):
 
     cursor.execute('UPDATE users SET numb=?, lang=? WHERE id=?', (message.contact.phone_number, message.from_user.language_code, message.chat.id, ))
     database.commit()
+# jkjdlkjsadk jaskldjlkj
 def add_user_location(message):
     from geopy.geocoders import Nominatim
     geolocator = Nominatim(user_agent="http")
